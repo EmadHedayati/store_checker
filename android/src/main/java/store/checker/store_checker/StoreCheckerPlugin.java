@@ -25,11 +25,11 @@ public class StoreCheckerPlugin implements FlutterPlugin, MethodCallHandler {
     channel.setMethodCallHandler(this);
   }
 
-  // static function onAttachedToEngine or registerWith will be called depending on the user's project
-  public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "store_checker");
-    channel.setMethodCallHandler(new StoreCheckerPlugin());
-  }
+//  // static function onAttachedToEngine or registerWith will be called depending on the user's project
+//  public static void registerWith(Registrar registrar) {
+//    final MethodChannel channel = new MethodChannel(registrar.messenger(), "store_checker");
+//    channel.setMethodCallHandler(new StoreCheckerPlugin());
+//  }
 
   //This function is used to get the installer package name of current application
   @TargetApi(Build.VERSION_CODES.ECLAIR)
